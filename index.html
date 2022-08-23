@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="confirmation.html" onsubmit="return validateForm()">
+            <h1>S'enregistrer</h1>
+            <div class="input-control">
+                <label for="username">Nom d'utilisateur</label>
+                <input id="username" name="username" type="text">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Adresse courriel</label>
+                <input id="email" name="email" type="text">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Mot de passe</label>
+                <input id="password"name="password" type="password">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirmez votre mot de passe</label>
+                <input id="password2"name="password2" type="password">
+                <div class="errorMessage"></div>
+            </div>
+            
+            <input type="submit" value="Soumettre">
+        </form>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-lg-3 rouge"></div>
+            <div class="col-md-4 col-lg-3 rouge"></div>
+            <div class="col-md-4 col-lg-3 rouge"></div>
+            <div class="col-md-4 col-lg-3 rouge"></div>
+            <div class="col-md-4 col-lg-3 rouge"></div>
+            <div class="col-md-4 col-lg-3 rouge"></div>
+            <div class="offset-md-2 offset-lg-0 col-md-4 col-lg-3 rouge"></div>
+            <div class=" col-md-4 col-lg-3 rouge"></div>
+        </div>
+    </div>
+
+    <script src="scripts/validation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
