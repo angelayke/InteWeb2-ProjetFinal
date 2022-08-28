@@ -1,1 +1,36 @@
-@import "../bootstrap/scss/bootstrap";
+
+
+/*---- HEADER ----*/
+header{
+    background-image: url(../images/fond-down2.jpg);
+    padding: 2rem 0;
+
+    & p,a {
+    color: #ffffff;
+    }
+}
+
+/*-- Navigation --*/
+
+/*---- MAIN ----*/
+section {
+    margin: 2rem 0;
+}
+
+/*-- Section Caroussel --*/
+
+/*-- Section 3Cards --*/
+
+/*-- Section Infolettre --*/
+
+/*---- FOOTER ----*/
+footer{
+        /*faire un extend du header*/
+    background-color: #272F30;
+    padding: 2rem 0;
+
+    & p,a,hr {
+    color: #ffffff;
+    }
+}
+
