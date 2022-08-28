@@ -1,4 +1,16 @@
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Anton';
+
+}
+
+a {
+    text-decoration: none;
+}
 
 /*---- HEADER ----*/
 header{
@@ -7,19 +19,35 @@ header{
 
     & p,a {
     color: #ffffff;
+    text-decoration: none;
+    }
+
+    & a:hover {
+        color: #ed8b00;
+    }
+
+    & h1, h2 {
+        color: #ffffff;
+        margin-top: 0.5rem;
     }
 }
-
-/*-- Navigation --*/
 
 /*---- MAIN ----*/
 section {
     margin: 2rem 0;
 }
 
+/*-- Navigation --*/
+nav {
+    background-color: #ed8b00;
+}
 /*-- Section Caroussel --*/
 
 /*-- Section 3Cards --*/
+.section-color {
+    background-color: #7b8789;
+    padding: 2rem 0;
+}
 
 /*-- Section Infolettre --*/
 
@@ -31,6 +59,11 @@ footer{
 
     & p,a,hr {
     color: #ffffff;
+    text-decoration: none;
+    }
+
+    & a:hover {
+        color: #ed8b00;
     }
 }
 
