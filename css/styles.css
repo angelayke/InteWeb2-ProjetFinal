@@ -1,3 +1,11 @@
+:root {
+  --black: #000000;
+  --darkgrey: #272F30;
+  --grey: #7B8789;
+  --orange: #ED8B00;
+  --white: #FFFFFF;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -16,14 +24,14 @@ header {
   padding: 2rem 0;
 }
 header p, header a {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
 }
 header a:hover {
-  color: #ed8b00;
+  color: var(--orange);
 }
 header h1, header h2 {
-  color: #ffffff;
+  color: var(--white);
   margin-top: 0.5rem;
 }
 
@@ -34,32 +42,43 @@ section {
 
 /*-- Navigation --*/
 nav {
-  background-color: #ed8b00;
+  background-color: var(--orange);
 }
 
 /* PAGE INDEX */
 /*-- Section Caroussel --*/
 /*-- Section 3Cards --*/
 .section-color {
-  background-color: #7b8789;
+  background-color: var(--grey);
   padding: 2rem 0;
 }
 
 .section3__card {
-  background-color: #ed8b00;
+  background-color: var(--orange);
 }
 
 #section3cards h4 {
-  color: #ffffff;
+  color: var(--white);
 }
 
 #section3cards a {
   text-decoration: none;
 }
 
-/*-- Section Infolettre --*/
 /* PAGE NEUF */
 /* PAGE CONTACT */
+/*-- Section representants --*/
+.accordion-button:not(.collapsed) {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.accordion-button:focus {
+  border-color: var(--orange);
+  outline: 0;
+  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
 /*---- FOOTER ----*/
 footer {
   /*faire un extend du header*/
