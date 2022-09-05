@@ -52,6 +52,10 @@ nav {
   color: #ffffff;
 }
 
+#section3cards a {
+  text-decoration: none;
+}
+
 /*-- Section Infolettre --*/
 /*---- FOOTER ----*/
 footer {
