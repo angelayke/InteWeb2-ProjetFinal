@@ -68,6 +68,7 @@ nav {
 /* PAGE NEUF */
 /* PAGE CONTACT */
 /*-- Section representants --*/
+/*-- fonctionne pas --*/
 .accordion-button:not(.collapsed) {
   color: var(--white);
   background-color: var(--orange);
@@ -77,6 +78,26 @@ nav {
   border-color: var(--orange);
   outline: 0;
   box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}
+
+/*-- Section Formulaire --*/
+.input-control input:focus {
+  outline: 0;
+}
+
+.input-control.success input {
+  border-color: green;
+}
+
+.input-control.error input {
+  border-color: red;
+}
+
+/* Message d'erreur */
+.input-control .errorMessage {
+  color: red;
+  font-size: 9px;
+  height: 13px;
 }
 
 /*---- FOOTER ----*/
