@@ -44,6 +44,14 @@ nav {
   padding: 2rem 0;
 }
 
+.section3__card {
+  background-color: #ed8b00;
+}
+
+#section3cards h4 {
+  color: #ffffff;
+}
+
 /*-- Section Infolettre --*/
 /*---- FOOTER ----*/
 footer {
