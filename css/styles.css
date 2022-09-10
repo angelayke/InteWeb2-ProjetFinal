@@ -131,17 +131,16 @@ nav {
 /* PAGE CONTACT */
 /*-- Section representants --*/
 /*-- fonctionne pas --*/
-.accordion-button:not(.collapsed) {
-  color: var(--white);
-  background-color: var(--orange);
+/*.accordion-button:not(.collapsed) {
+    color: var(--white);
+    background-color: var(--orange);
 }
 
 .accordion-button:focus {
-  border-color: var(--orange);
-  outline: 0;
-  box-shadow: var(--bs-accordion-btn-focus-box-shadow);
-}
-
+    border-color: var(--orange);
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+}*/
 /*-- Section Formulaire --*/
 .input-control input:focus {
   outline: 0;
@@ -176,12 +175,5 @@ footer hr {
 }
 footer a:hover {
   color: #ed8b00;
-}
-
-/* Media Queries*/
-@media screen and (max-width: 1080px) {
-  body {
-    background-color: red;
-  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -142,7 +142,7 @@ nav {
 /* PAGE CONTACT */
 /*-- Section representants --*/
 /*-- fonctionne pas --*/
-.accordion-button:not(.collapsed) {
+/*.accordion-button:not(.collapsed) {
     color: var(--white);
     background-color: var(--orange);
 }
@@ -151,7 +151,7 @@ nav {
     border-color: var(--orange);
     outline: 0;
     box-shadow: var(--bs-accordion-btn-focus-box-shadow);
-}
+}*/
 
 /*-- Section Formulaire --*/
 .input-control input:focus {
@@ -192,10 +192,3 @@ footer {
     }
 }
 
-
-/* Media Queries*/
-@media screen and (max-width: 1080px) {
-    body {
-        background-color: red;
-    }
-}
