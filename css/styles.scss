@@ -6,11 +6,16 @@
     --white: #FFFFFF;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Anton';
 
 }
@@ -20,20 +25,22 @@ a {
 }
 
 /*---- HEADER ----*/
-header{
+header {
     background-image: url(../images/fond-down2.jpg);
     padding: 2rem 0;
 
-    & p,a {
-    color: var(--white);
-    text-decoration: none;
+    & p,
+    a {
+        color: var(--white);
+        text-decoration: none;
     }
 
     & a:hover {
         color: var(--orange);
     }
 
-    & h1, h2 {
+    & h1,
+    h2 {
         color: var(--white);
         margin-top: 0.5rem;
     }
@@ -48,6 +55,16 @@ section {
 nav {
     background-color: var(--orange);
 }
+
+.nav-item {
+    margin-right: 1rem;
+
+    & :hover {
+        background-color: var(--white);
+    }
+}
+
+
 
 /* PAGE INDEX */
 /*-- Section Caroussel --*/
@@ -67,11 +84,60 @@ nav {
 }
 
 #section3cards a {
-   text-decoration: none;
+    text-decoration: none;
 }
 
 
 /* PAGE NEUF */
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 50%;
+}
+
+.box:hover .image {
+    opacity: 0.3;
+}
+
+.box:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: var(--orange);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 32px;
+
+    & a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    & a:hover {
+        color: var(--white);
+    }
+}
+
 
 /* PAGE CONTACT */
 /*-- Section representants --*/
@@ -88,15 +154,15 @@ nav {
 }
 
 /*-- Section Formulaire --*/
-.input-control input:focus{
+.input-control input:focus {
     outline: 0;
 }
 
-.input-control.success input{
+.input-control.success input {
     border-color: green;
 }
 
-.input-control.error input{
+.input-control.error input {
     border-color: red;
 }
 
@@ -109,14 +175,16 @@ nav {
 
 
 /*---- FOOTER ----*/
-footer{
-        /*faire un extend du header*/
+footer {
+    /*faire un extend du header*/
     background-color: #272F30;
     padding: 2rem 0;
 
-    & p,a,hr {
-    color: #ffffff;
-    text-decoration: none;
+    & p,
+    a,
+    hr {
+        color: #ffffff;
+        text-decoration: none;
     }
 
     & a:hover {
@@ -124,3 +192,10 @@ footer{
     }
 }
 
+
+/* Media Queries*/
+@media screen and (max-width: 1080px) {
+    body {
+        background-color: red;
+    }
+}
