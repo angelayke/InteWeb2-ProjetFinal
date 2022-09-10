@@ -36,6 +36,18 @@
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/2a27a9298f.js" crossorigin="anonymous"></script>
 
+  <script>
+		// Register service worker.
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('service-worker.js')
+					.then((reg) => {
+						console.log('Service worker registered. Notre service worker est chargé.', reg);
+					});
+			});
+		}
+	</script>
+
 </head>
 
 <body>
