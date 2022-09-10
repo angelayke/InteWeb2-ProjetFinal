@@ -36,7 +36,7 @@ const isValidEmail = email => {
 const validateForm = () => {
     let noError = true;
     const prenomInputValue = inputPrenom.value.trim();
-    const nomInputValue = inputPrenom.value.trim();
+    const nomInputValue = inputNom.value.trim();
     const emailInputValue = inputEmail.value.trim();
 
     if (prenomInputValue === '') {
