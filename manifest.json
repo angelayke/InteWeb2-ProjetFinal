@@ -22,7 +22,7 @@
             "src": "images/icon/maskable_icon_x144.png",
             "sizes": "144x144",
             "type": "image/png",
-            "purpose": "any maskable"
+            "purpose": "any"
         },
         {
             "src": "images/icon/maskable_icon_x48.png",
